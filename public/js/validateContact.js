@@ -40,7 +40,7 @@ export const validateClientContact = (contactType, contactInput) => {
           return true;
       case 'Email':
           if (onlyEmail.test(contactInput.value)) {
-              showErrorMessage('Непарвильный Email!', writeValue, contactInput);
+            showErrorMessage('Неправильный Email!', writeValue, contactInput);
               return false;
           }
 
